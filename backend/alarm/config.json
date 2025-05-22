@@ -6,60 +6,31 @@
     "ringtone_file": "alarm/ringtone.mp3",
     "meetings": [
         {
-            "subject": "rfrf",
-            "start": "2025-05-19T13:30:00",
-            "end": "2025-05-19T14:00:00",
-            "account": "JGopa@technocratsdomain.com",
-            "ring_at": "2025-05-19T13:20:00",
-            "id": "f4c2b47077d0646df4bace4d6e85717fe03a2f8e10d80eee7c236324ab1d7f96"
-        },
-        {
-            "subject": "sdvr",
-            "start": "2025-05-19T14:00:00",
-            "end": "2025-05-19T14:30:00",
-            "account": "JGopa@technocratsdomain.com",
-            "ring_at": "2025-05-19T13:50:00",
-            "id": "24e95e66806250328f97c3b7219260cf4ff55cc3f6139f676b6685e0892560ab"
-        },
-        {
-            "subject": "evf",
-            "start": "2025-05-19T15:30:00",
-            "end": "2025-05-19T16:00:00",
-            "account": "JGopa@technocratsdomain.com",
-            "ring_at": "2025-05-19T15:20:00",
-            "id": "6d3a9880c04d4b4224a790c5ad3f1eb34f967123cdd6a26b7791a11a78e66ef5"
-        },
-        {
-            "subject": "Recc",
-            "start": "2025-05-19T16:30:00",
-            "end": "2025-05-19T17:00:00",
-            "account": "JGopa@technocratsdomain.com",
-            "ring_at": "2025-05-19T16:20:00",
-            "id": "702519a7b5f63259040dd26c111e56a23afc1a8684dcb2d215384b178cbd0c51"
-        },
-        {
-            "subject": "Recc",
-            "start": "2025-05-20T16:30:00",
-            "end": "2025-05-20T17:00:00",
-            "account": "JGopa@technocratsdomain.com",
-            "ring_at": "2025-05-20T16:20:00",
-            "id": "38e9c90db1dad703a1675e6303b6bda201fdec7a20a346b56c532f7ffb02ba1e"
-        },
-        {
-            "subject": "Recc",
-            "start": "2025-05-21T16:30:00",
-            "end": "2025-05-21T17:00:00",
-            "account": "JGopa@technocratsdomain.com",
-            "ring_at": "2025-05-21T16:20:00",
-            "id": "9ee877460ae871bfd9777ced353bcebd30bf3f1b6bee1102175f3925b58dd388"
-        },
-        {
             "subject": "Recc",
             "start": "2025-05-22T16:30:00",
             "end": "2025-05-22T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-22T16:20:00",
-            "id": "b1c9524f21a7217b50a03767de94a73dfb21ed0fb9a11e6b4627e86deb6df460"
+            "id": "b1c9524f21a7217b50a03767de94a73dfb21ed0fb9a11e6b4627e86deb6df460",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "vdbdf",
+            "start": "2025-05-22T18:30:00",
+            "end": "2025-05-22T19:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-05-22T18:20:00",
+            "id": "3c8eb02f78817963a80be30faa55e814bafe6095627a258fbaf051074f9d565c",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "rdsf",
+            "start": "2025-05-23T13:00:00",
+            "end": "2025-05-23T13:30:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-05-23T12:50:00",
+            "id": "367ccaf77b02fbb71315747830fbfffffff9a0ff256f3907cb9813ab9c5815fa",
+            "MeetingStatus": 1
         },
         {
             "subject": "Recc",
@@ -67,7 +38,8 @@
             "end": "2025-05-23T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-23T16:20:00",
-            "id": "cd3896928c1dcd5c578e8307c7f86d50c40c1013dbf2d96cb14882de0cd87996"
+            "id": "cd3896928c1dcd5c578e8307c7f86d50c40c1013dbf2d96cb14882de0cd87996",
+            "MeetingStatus": 1
         },
         {
             "subject": "Recc",
@@ -75,7 +47,8 @@
             "end": "2025-05-24T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-24T16:20:00",
-            "id": "138580334b479d9634b5789afd408416e63edb74f2f73c491341ae3eaf522d70"
+            "id": "138580334b479d9634b5789afd408416e63edb74f2f73c491341ae3eaf522d70",
+            "MeetingStatus": 1
         },
         {
             "subject": "Recc",
@@ -83,7 +56,8 @@
             "end": "2025-05-25T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-25T16:20:00",
-            "id": "8b8f5af0639070663ca0133868d4068fa87ded642c7c543a8c8ca55f697017ee"
+            "id": "8b8f5af0639070663ca0133868d4068fa87ded642c7c543a8c8ca55f697017ee",
+            "MeetingStatus": 1
         },
         {
             "subject": "Recc",
@@ -91,7 +65,8 @@
             "end": "2025-05-26T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-26T16:20:00",
-            "id": "5f50b1389e1e94d6ad7e03458453c2b4a5f0d3e60636b14e8e48a940062b7ef3"
+            "id": "5f50b1389e1e94d6ad7e03458453c2b4a5f0d3e60636b14e8e48a940062b7ef3",
+            "MeetingStatus": 1
         },
         {
             "subject": "Recc",
@@ -99,7 +74,8 @@
             "end": "2025-05-27T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-27T16:20:00",
-            "id": "09ad431be35599e857bd9e2f9404afe7aab3651ed0bb5ead4ae43a2f90d7ecdd"
+            "id": "09ad431be35599e857bd9e2f9404afe7aab3651ed0bb5ead4ae43a2f90d7ecdd",
+            "MeetingStatus": 1
         },
         {
             "subject": "Recc",
@@ -107,7 +83,206 @@
             "end": "2025-05-28T17:00:00",
             "account": "JGopa@technocratsdomain.com",
             "ring_at": "2025-05-28T16:20:00",
-            "id": "b511615971d35a93fe590748e2aa169a66275f49c00e7fbec70933286dfd0223"
+            "id": "b511615971d35a93fe590748e2aa169a66275f49c00e7fbec70933286dfd0223",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-05-29T16:30:00",
+            "end": "2025-05-29T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-05-29T16:20:00",
+            "id": "3e60423e96f30be479d2eb18a9d0a5b64afab5746616d7969967cec30fd6633e",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-05-30T16:30:00",
+            "end": "2025-05-30T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-05-30T16:20:00",
+            "id": "c3db787dfcc3e16f6641f34f0a67128fbeac8709acde43ff54aa1176833b0736",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-05-31T16:30:00",
+            "end": "2025-05-31T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-05-31T16:20:00",
+            "id": "0c012a68954c117a9b66191baa847a7c3b36b4d4f7c948e64a2428a9450da1e4",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-01T16:30:00",
+            "end": "2025-06-01T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-01T16:20:00",
+            "id": "85ecbf93777cd23ca50efa84772aff7eb69877a10fc6ce09818a17dd02088a15",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-02T16:30:00",
+            "end": "2025-06-02T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-02T16:20:00",
+            "id": "71d47de78411ec0ae7d8a7715535fba00ce97fe1ae8f011128aa53dcb22c82d9",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-03T16:30:00",
+            "end": "2025-06-03T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-03T16:20:00",
+            "id": "7070df3c6a7a2f4b4a5c1bae477b88a2ac8d141c68f689fecf5f903b5eb419ce",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-04T16:30:00",
+            "end": "2025-06-04T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-04T16:20:00",
+            "id": "4a676a933d551f843808d280dee20c5e3d94882b96dd9e2085f80d66af40e537",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-05T16:30:00",
+            "end": "2025-06-05T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-05T16:20:00",
+            "id": "7c44d4a6f8bfefa55fdaacf4953ec8ed97763425a09a5cd4ae0449b6b8f656b3",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-06T16:30:00",
+            "end": "2025-06-06T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-06T16:20:00",
+            "id": "afccbf5412b8a15406b9e9cbeecdc106a16392ffd1cae6909686fc6670abbd50",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-07T16:30:00",
+            "end": "2025-06-07T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-07T16:20:00",
+            "id": "41cc81e03e19b6596784c45a857a4f3fd6f2a32dfd716098b5b914d9c03df4a9",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-08T16:30:00",
+            "end": "2025-06-08T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-08T16:20:00",
+            "id": "dbcea61f16f56faac43d3b76c5eb470baa1329221b389ad1421f6d80959830be",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-09T16:30:00",
+            "end": "2025-06-09T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-09T16:20:00",
+            "id": "3966add66476410e63fbd629534a530478ab1ca5f240114c1d5c02819374bbf8",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-10T16:30:00",
+            "end": "2025-06-10T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-10T16:20:00",
+            "id": "84580c2bee00da359b3017f375fd274d1de6432579eaaddd45b7752a2c83f2d9",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-11T16:30:00",
+            "end": "2025-06-11T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-11T16:20:00",
+            "id": "5e98926c3d95f4328013534af4bfb461129683cd44808dc9cb6c1c1d33cdc0fc",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-12T16:30:00",
+            "end": "2025-06-12T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-12T16:20:00",
+            "id": "bbad3063066d2ae59138f812edac0b05ebdb5c601d92f6345864c7e35c2914c1",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-13T16:30:00",
+            "end": "2025-06-13T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-13T16:20:00",
+            "id": "bb7922bb3bee30bd8dcd6c3bc712476ca4271e9315ccb72b0d3c8ec52c7736bd",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-14T16:30:00",
+            "end": "2025-06-14T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-14T16:20:00",
+            "id": "ea28e7b27941dea1eba8a9bbf3fed0b24476ff49b6d5bf0eaaf5806ce6cc8612",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-15T16:30:00",
+            "end": "2025-06-15T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-15T16:20:00",
+            "id": "0103776ad6c046ad0170759f8e6ae4aec3a05bf60c42dee2343266155297f4a9",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-16T16:30:00",
+            "end": "2025-06-16T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-16T16:20:00",
+            "id": "9033bb74401a69296280d94d9605204c1e10c16ec20441fc3041c82dee6cf3bf",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-17T16:30:00",
+            "end": "2025-06-17T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-17T16:20:00",
+            "id": "aea6e4f4622ef001c4a4001acf964a22900b9a955e7d995ab8618615a457a829",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-18T16:30:00",
+            "end": "2025-06-18T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-18T16:20:00",
+            "id": "955d564956d3fe95ce7d6138665891e56420f27e9197dd15dfc079deae8774de",
+            "MeetingStatus": 1
+        },
+        {
+            "subject": "Recc",
+            "start": "2025-06-19T16:30:00",
+            "end": "2025-06-19T17:00:00",
+            "account": "JGopa@technocratsdomain.com",
+            "ring_at": "2025-06-19T16:20:00",
+            "id": "3818fbd0fd21da13d91d114fdc0909b8f76d7a40d5832754eb2afabc4b057d6e",
+            "MeetingStatus": 1
         }
     ]
 }

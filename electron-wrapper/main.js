@@ -2,43 +2,31 @@ const { app, BrowserWindow } = require('electron');
 const { spawn } = require('child_process');
 const path = require('path');
 const AutoLaunch = require('auto-launch');
-const kill = require('tree-kill'); // 👈 include this
+const net = require('net');
 
 let backendProc;
 
-function startBackend() {
-  const exePath = path.join(process.resourcesPath, 'backend', 'meeting_reminder_wsgi.exe');
-  backendProc = spawn(exePath, [], {
-    // shell: true,
-    cwd: path.dirname(exePath),
-    windowsHide: true
-  });
+// Check if a port is already in use (e.g., Flask backend already running)
+function isPortInUse(port, callback) {
+  const tester = net.createServer()
+    .once('error', err => (err.code === 'EADDRINUSE' ? callback(true) : callback(false)))
+    .once('listening', () => tester.once('close', () => callback(false)).close());
 
-  backendProc.stdout.on('data', data => {
-    console.log(`Flask stdout: ${data}`);
-  });
-
-  backendProc.stderr.on('data', data => {
-    console.error(`Flask stderr: ${data}`);
-  });
-
-  backendProc.on('close', code => {
-    console.log(`Flask backend exited with code ${code}`);
-  });
+  // Bind specifically to 127.0.0.1
+  tester.listen(port, '127.0.0.1');
 }
 
-function stopBackend() {
-  if (backendProc && backendProc.pid) {
-    console.log('Attempting to kill Flask backend...');
-    kill(backendProc.pid, 'SIGTERM', err => {
-      if (err) {
-        console.error('Failed to kill backend:', err);
-      } else {
-        console.log('Flask backend killed');
-      }
-    });
-    backendProc = null;
-  }
+function startBackend() {
+  const exePath = path.join(process.resourcesPath, 'backend', 'meeting_reminder_wsgi.exe');
+
+  backendProc = spawn(exePath, [], {
+    cwd: path.dirname(exePath),
+    detached: true,
+    stdio: 'ignore',
+    windowsHide: true,
+  });
+
+  backendProc.unref(); // Ensure it keeps running after Electron exits
 }
 
 function createWindow() {
@@ -51,33 +39,44 @@ function createWindow() {
     }
   });
 
-  // Delay to give Flask backend time to start
+  // Wait for backend to start (5 seconds) before loading frontend
   setTimeout(() => {
     win.loadFile(path.join(__dirname, 'build', 'index.html'));
-  }, 3000);
+  }, 5000);
 }
 
+// Auto-launch the app on startup
 const appAutoLauncher = new AutoLaunch({
   name: 'Meeting Reminder',
   path: app.getPath('exe'),
 });
 
 app.whenReady().then(() => {
+  // Enable auto-launch if not already
   appAutoLauncher.isEnabled().then((isEnabled) => {
-    if (!isEnabled) {
-      appAutoLauncher.enable();
-    }
+    if (!isEnabled) appAutoLauncher.enable();
   }).catch(err => console.error('AutoLaunch error:', err));
 
-  startBackend();
-  createWindow();
+  // Only start backend if not already running
+  isPortInUse(5000, (inUse) => {
+    if (!inUse) {
+      console.log('Starting backend...');
+      startBackend();
+    } else {
+      console.log('Backend already running on port 5000');
+    }
+    createWindow();
+  });
 });
 
+// Handle window close
 app.on('window-all-closed', () => {
-  stopBackend(); // Make sure this uses the updated function
   if (process.platform !== 'darwin') app.quit();
 });
 
+// Handle dock click / app reopen (macOS)
 app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  if (BrowserWindow.getAllWindows().length === 0) {
+    createWindow();
+  }
 });
